@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
   roles:
-    - ansible-role-repoclone
+    - common
     - ansible-pull-configure
