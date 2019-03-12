@@ -1,0 +1,11 @@
+---
+- name: Clone git repos
+  git:
+    repo: "{{ item.address }}"
+    dest: "{{ rolepath }}/{{ item.name }}"
+    clone: yes
+    update: no
+  with_items:
+    - "{{ gitrepos }}"
+#- name: Cloning ansible roles with ansible-galaxy
+  #shell: "ansible-galaxy install -r {{ rolepath }}/requirements.yml --roles-path {{ rolepath }}"
