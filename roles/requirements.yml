@@ -1,0 +1,8 @@
+#one time run ansiblepull
+- src: https://github.com/broadinstitute/ansible-pull-configure.git
+#docker
+- src: https://github.com/geerlingguy/ansible-role-docker.git
+#lvm
+- src: https://github.com/HanXHX/ansible-lvm.git
+
+
