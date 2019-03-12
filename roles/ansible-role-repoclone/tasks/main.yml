@@ -6,9 +6,6 @@
     clone: yes
     update: no
   with_items:
-    - { address: 'https://github.com/broadinstitute/ansible-pull-configure.git', name: 'ansible-pull-configure' }
-    - { address: 'https://github.com/geerlingguy/ansible-role-docker.git', name: 'ansible-role-docker' }
-    - { address: 'https://github.com/HanXHX/ansible-lvm.git', name: 'ansible-lvm' }
-
+    - "{{ gitrepos }}"
 #- name: Cloning ansible roles with ansible-galaxy
   #shell: "ansible-galaxy install -r {{ rolepath }}/requirements.yml --roles-path {{ rolepath }}"
