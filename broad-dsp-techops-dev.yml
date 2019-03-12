@@ -1,4 +1,4 @@
 - hosts: docker
   roles:
-   - ansible-role-repoclone 
-   - ansible-role-docker   
+   - common 
+   - ansible-role-docker
