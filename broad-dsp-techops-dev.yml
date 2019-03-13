@@ -4,4 +4,4 @@
       name: ansible-role-clone-repos
   - include_role:
       name: ansible-role-docker
-      name: ansible-lvm
+      name: ansible-manage-lvm

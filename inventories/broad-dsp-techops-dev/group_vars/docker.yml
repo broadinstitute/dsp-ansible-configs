@@ -17,4 +17,4 @@ lvm_groups:
         size: 24g
         create: true
         filesystem: xfs
-        mount: true
+        mount: false
