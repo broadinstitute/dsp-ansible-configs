@@ -10,13 +10,11 @@ docker_compose_path: /usr/local/bin/docker-compose
 lvm_apply: true
 lvm_groups:
   - vgname: vg_docker
-    disks: /dev/disk/by-id/google-docker-disk-1
+    disks: /dev/sdb
     create: true
     lvnames:
       - lvname: docker-pool
-        size: 25g
+        size: 24g
         create: true
         filesystem: xfs
-        mount: false
-        mount_point: /var/lib/mysql
-        mount_options: 'defaults,noatime'
+        mount: true
