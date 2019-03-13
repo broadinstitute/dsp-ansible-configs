@@ -1,4 +1,4 @@
 *.swp
 *.retry
-!/roles/common
+!/roles/ansible-role-clone-repos
 /roles/*
