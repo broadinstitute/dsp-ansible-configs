@@ -5,7 +5,9 @@ This repo is intended to contain all ansible-pull configs. Root level of this re
 
 ## Provisioner.yml
 #### Overview
-Provisioner will be called by a metadata script that and will only run once, it take the base role `ansible-role-clone-repos` and clones all repos in `/roles/requirements.yml` this is not the final way to clone repos but it works for now. [ansible-pull-configure](https://github.com/broadinstitute/ansible-pull-configure) is cloned and ran this will configure the ansible-pull cron job, logs and kick off an initial checkin
+Provisioner will be called by a metadata script that and will only run once, it take the base role `ansible-role-clone-repos` and clones all repos in `/roles/requirements.yml` this is not the final way to clone repos but it works for now. [ansible-pull-configure](https://github.com/broadinstitute/ansible-pull-configure) is cloned and ran this will configure the ansible-pull cron job, logs and kick off an initial checkin.
+
+**ansible-role-clone-repos should alway be ran as an ```import_role``` so it can clone all the repos before the playbook is compiled otherwise all proceeding roles will fail. ```import_role``` is precompile and ```include_role``` is post compile**
 ```
 ---
 - hosts: localhost
@@ -17,7 +19,7 @@ Provisioner will be called by a metadata script that and will only run once, it 
 ```
 
 ### inventories
-The inventory structure chosen for this is the [alternative directory layout](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html#alternative-directory-layout). Each Google project will have it's own directory show below is broad-dsp-techops-dev. For my testing purposes this will updated later.
+The inventory structure chosen for this is the [alternative directory layout](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html#alternative-directory-layout). Each Google project will have it's own inventory/directory, shown below is broad-dsp-techops-dev. For testing purposes this will updated later.
 ```inventories/
 └── broad-dsp-techops-dev
     ├── group_vars
@@ -27,7 +29,7 @@ The inventory structure chosen for this is the [alternative directory layout](ht
     └── hosts
 ```
 
-#### Assumptions 
+#### Assumptions
 - ansible binaries: `/usr/local/bin/ansible/bin/`
 - Cloned working directory: `/var/lib/ansible/local`
 - inventory path: `/var/lib/ansible/local/inventories/{{ gproject }}/hosts`
