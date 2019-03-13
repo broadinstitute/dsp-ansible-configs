@@ -34,3 +34,4 @@ The inventory structure chosen for this is the [alternative directory layout](ht
 - Cloned working directory: `/var/lib/ansible/local`
 - inventory path: `/var/lib/ansible/local/inventories/{{ gproject }}/hosts`
 - playbook (google project name): `some_google_project_name.yml`
+- `<role-name>/meta/main.yml` is needed if using ansible-galaxy in the [ansible-role-clone-repos](https://github.com/broadinstitute/DSP-ansible-configs/tree/master/roles/ansible-role-clone-repos)
