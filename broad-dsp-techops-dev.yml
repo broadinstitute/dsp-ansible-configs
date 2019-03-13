@@ -1,4 +1,6 @@
 - hosts: docker
-  roles:
-   - common 
-   - ansible-role-docker
+tasks:
+- import_role:
+    name: ansible-role-clone-repos
+- include_role:
+    name: ansible-role-docker
