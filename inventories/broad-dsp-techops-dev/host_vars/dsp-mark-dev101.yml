@@ -1,3 +1,14 @@
 ---
-base_packages: htop,vim,wget
-
+#lvm vars
+manage_lvm: true
+lvm_groups:
+  - vgname: vg_docker
+    disks:
+      - /dev/disk/by-id/google-docker-disk-1
+    create: true
+    lvnames:
+      - lvname: docker-pool
+        size: 20g
+        create: true
+        filesystem: xfs
+        mount: false
