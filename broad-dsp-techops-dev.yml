@@ -3,6 +3,7 @@
   - import_role:
       name: ansible-role-clone-repos
   - include_role:
-      name: ansible-role-docker
-#  - include_role:
-#      name: ansible-manage-lvm
+      name: "{{ item }}"
+    with_items:
+      - ansible-role-basepackages
+      - ansible-role-docker
