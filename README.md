@@ -16,6 +16,8 @@ Provisioner will be called by a metadata script that and will only run once, it 
       name: ansible-role-clone-repos
   - include_role:
       name: ansible-pull-configure
+    vars:
+      branch: master
 ```
 
 ### inventories
