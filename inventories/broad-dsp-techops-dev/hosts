@@ -1,8 +1,9 @@
 [all:children]
-docker
+dockerlvm
+dockerol2
 
-[docker]
-dsp-mark-dev[100:103]
+[dockerlvm]
+dsp-mark-dev[100:102]
 
-
-## ansible_connection=local
+[dockerol2]
+dsp-mark-dev[103:104]
