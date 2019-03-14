@@ -5,3 +5,5 @@
       name: ansible-role-clone-repos
   - include_role:
       name: ansible-pull-configure
+      vars:
+        branch: ms-test
