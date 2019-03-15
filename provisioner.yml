@@ -6,4 +6,4 @@
   - include_role:
       name: ansible-pull-configure
     vars:
-      branch: master
+      branch: ms-test

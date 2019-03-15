@@ -6,3 +6,5 @@
 - src: https://github.com/broadinstitute/ansible-manage-lvm.git
 #basepacks
 - src: https://github.com/broadinstitute/ansible-role-basepackages.git
+#lvmthinlpool
+- src: https://github.com/broadinstitute/ansible-docker-provision-thinpool.git

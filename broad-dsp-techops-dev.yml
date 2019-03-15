@@ -1,4 +1,4 @@
-- hosts: docker
+- hosts: dockerol2
   tasks:
   - import_role:
       name: ansible-role-clone-repos
@@ -7,3 +7,14 @@
     with_items:
       - ansible-role-basepackages
       - ansible-role-docker
+
+- hosts: dockerlvm
+  tasks:
+  - import_role:
+      name: ansible-role-clone-repos
+  - include_role:
+      name: "{{ item }}"
+    with_items:
+      - ansible-role-basepackages
+      - ansible-role-docker
+      - ansible-docker-provision-thinpool
