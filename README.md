@@ -28,6 +28,11 @@ The inventory structure chosen for this is the [alternative directory layout](ht
     │   └── dsp-mark-dev101.yml
     └── hosts
 ```
+#### Deployment Overview
+- Terraform will deploy a machine
+  - anisble will be installed and it will ansible-pull provisioner.yml then configure the initial checkin,cron job and log rotation
+- ansible-pull is ran to point at the google project inventory name
+
 
 #### Assumptions
 - ansible binaries: `/usr/local/bin/ansible/bin/`
