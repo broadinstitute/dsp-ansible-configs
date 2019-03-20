@@ -1,4 +1,4 @@
-# DSP-ansible-configs
+# dsp-ansible-configs
 
 ## Overview
 This repo is intended to contain all ansible-pull configs. Root level of this repo will contain the various site yamls and the inventory directories will include all group/host vars.
