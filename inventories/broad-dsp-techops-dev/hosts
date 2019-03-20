@@ -1,9 +1,9 @@
 [all:children]
-dockerlvm
-dockerol2
+docker-lvm
+docker-ol2
 
-[dockerol2]
+[docker-ol2]
 dsp-mark-dev[103:104]
 
-[dockerlvm]
+[docker-lvm]
 dsp-mark-dev[100:102]

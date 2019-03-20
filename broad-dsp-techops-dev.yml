@@ -1,4 +1,4 @@
-- hosts: dockerol2
+- hosts: docker-ol2
   tasks:
   - import_role:
       name: ansible-role-clone-repos
@@ -8,7 +8,7 @@
       - ansible-role-basepackages
       - ansible-role-docker
 
-- hosts: dockerlvm
+- hosts: docker-lvm
   tasks:
   - import_role:
       name: ansible-role-clone-repos

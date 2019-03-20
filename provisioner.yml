@@ -4,6 +4,6 @@
   - import_role:
       name: ansible-role-clone-repos
   - include_role:
-      name: ansible-pull-configure
+      name: ansible-role-configure
     vars:
-      branch: ms-test
+      branch: "{{ lookup('env','ANSIBLE_BRANCH') }}"
