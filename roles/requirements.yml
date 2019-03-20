@@ -10,3 +10,5 @@
 - src: https://github.com/broadinstitute/ansible-role-docker-thinpool.git
 #lvm
 - src: https://github.com/broadinstitute/ansible-role-lvm.git
+#stackdriver
+- src: https://github.com/broadinstitute/stackdriver-ansible-role.git
