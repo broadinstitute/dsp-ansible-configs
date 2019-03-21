@@ -1,4 +1,4 @@
-# DSP-ansible-configs
+# dsp-ansible-configs
 
 ## Overview
 This repo is intended to contain all ansible-pull configs. Root level of this repo will contain the various site yamls and the inventory directories will include all group/host vars.
@@ -16,6 +16,8 @@ Provisioner will be called by a metadata script that and will only run once, it 
       name: ansible-role-clone-repos
   - include_role:
       name: ansible-pull-configure
+    vars:
+      branch: master
 ```
 
 ### inventories
