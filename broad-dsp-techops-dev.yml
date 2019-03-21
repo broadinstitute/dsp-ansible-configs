@@ -6,6 +6,7 @@
       name: "{{ item }}"
     with_items:
       - ansible-role-basepackages
+      - ansible-role-stackdriver
 
 - hosts: docker-ol2
   tasks:

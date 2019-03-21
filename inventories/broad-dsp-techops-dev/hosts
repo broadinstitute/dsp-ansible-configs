@@ -1,6 +1,7 @@
 [all:children]
 docker-lvm
 docker-ol2
+stackdriver
 
 [docker-ol2]
 dsp-mark-dev[203:204]
