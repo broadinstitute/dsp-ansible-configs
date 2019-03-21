@@ -1,0 +1,22 @@
+---
+#docker vars
+docker_edition: 'ce'
+docker_package: "docker-{{ docker_edition }}-18.09.3-3.el7"
+docker_package_state: present
+docker_install_compose: true
+docker_compose_version: "1.22.0"
+docker_compose_path: /usr/local/bin/docker-compose
+#overlay2 disk
+lvm_groups:
+  - vgname: vg_docker
+    disks:
+      - /dev/sdb
+    create: true
+    lvnames:
+      - lvname: docker-lvm
+        size: 20g
+        create: true
+        filesystem: xfs
+        mount: true
+        mntp: /var/lib/docker
+manage_lvm: true
