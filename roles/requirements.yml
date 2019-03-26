@@ -11,7 +11,7 @@
 #lvm
 - src: https://github.com/broadinstitute/ansible-role-lvm.git
 #stackdriver
-- src: https://github.com/broadinstitute/stackdriver-ansible-role.git
+- src: https://github.com/broadinstitute/ansible-role-stackdriver.git
 #yumcron
 - src: https://github.com/broadinstitute/ansible-role-yum-cron.git
 #sentinelone
