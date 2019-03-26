@@ -8,6 +8,7 @@
       - ansible-role-basepackages
       - ansible-role-stackdriver
       - ansible-role-yum-cron
+      - ansible-role-sentinelone
 
 - hosts: docker-ol2
   tasks:
