@@ -3,7 +3,7 @@
 #docker
 - src: https://github.com/broadinstitute/ansible-role-docker.git
 #lvm
-- src: https://github.com/broadinstitute/ansible-manage-lvm.git
+- src: https://github.com/broadinstitute/ansible-role-lvm.git
 #basepacks
 - src: https://github.com/broadinstitute/ansible-role-basepackages.git
 #lvmthinlpool
