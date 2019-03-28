@@ -24,6 +24,6 @@ gitrepos:
 #docker
   - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker' }
 #lvm
-  - { address: 'https://github.com/broadinstitute/ansible-role-lvm.git, name: 'ansible-role-lvm' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-lvm.git', name: 'ansible-role-lvm' }
 #basepacks
-  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git, name: 'ansible-role-basepackage' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackage' }
