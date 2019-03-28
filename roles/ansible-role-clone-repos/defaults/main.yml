@@ -8,7 +8,7 @@ gitrepos:
 #lvm
   - { address: 'https://github.com/broadinstitute/ansible-role-lvm.git', name: 'ansible-role-lvm' }
 #basepacks
-  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackage' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages' }
 #lvmthinlpool
   - { address: 'https://github.com/broadinstitute/ansible-role-docker-thinpool.git', name: 'ansible-role-docker-thinpool' }
 #stackdriver
