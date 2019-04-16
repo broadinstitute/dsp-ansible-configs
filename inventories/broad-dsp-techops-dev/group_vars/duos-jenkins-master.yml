@@ -1,0 +1,26 @@
+---
+#docker vars
+docker_edition: 'ce'
+docker_package: "docker-{{ docker_edition }}-18.09.3-3.el7"
+docker_package_state: present
+docker_install_compose: true
+docker_compose_version: "1.22.0"
+docker_compose_path: /usr/local/bin/docker-compose
+#thinpool stuff
+docker_provision_thinpool_device_name: /dev/sdb
+docker_provision_thinpool_size_gb: 100
+docker_provision_thinpool_volume_group_name: vg_docker
+docker_provision_thinpool_logical_volume_name: docker-pool
+gitrepos:
+#docker
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker' }
+#basepacks
+  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages' }
+#lvmthinlpool
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker-thinpool.git', name: 'ansible-role-docker-thinpool' }
+#stackdriver
+  - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver' }
+#yumcron
+  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron' }
+#sentinelone
+  - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone' }
