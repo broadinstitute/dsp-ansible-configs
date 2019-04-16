@@ -16,6 +16,8 @@ jenkins_admin: "dsptechops@broadinstitute.org"
 jenkins_install_via: "docker"
 jenkins_port: 8080
 jenkins_url: "http://jenkins:8080"
+jenkins_config_owner: "jenkins"
+jenkins_config_group: "jenkins"
 gitrepos:
 #docker
   - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker' }
