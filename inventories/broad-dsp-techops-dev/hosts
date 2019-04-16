@@ -15,7 +15,7 @@ dsp-mark-dev[201:202]
 dsp-mark-dev[301:302]
 
 [duos-jenkins-master]
-dsp-monster-jenkins-master-dev[201:202]
+dsp-duos-jenkins-master-dev[201:202]
 
 [duos-jenkins-slave]
-dsp-monster-jenkins-slave-dev[201:204]
+dsp-duos-jenkins-slave-dev[201:204]
