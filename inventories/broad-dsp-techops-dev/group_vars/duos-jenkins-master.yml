@@ -11,6 +11,11 @@ docker_provision_thinpool_device_name: /dev/sdb
 docker_provision_thinpool_size_gb: 100
 docker_provision_thinpool_volume_group_name: vg_docker
 docker_provision_thinpool_logical_volume_name: docker-pool
+jenkins_version: "2.73.1"
+jenkins_admin: "dsptechops@broadinstitute.org"
+jenkins_install_via: "docker"
+jenkins_port: 8080
+jenkins_url: "http://jenkins:8080"
 gitrepos:
 #docker
   - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker' }
@@ -24,3 +29,5 @@ gitrepos:
   - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron' }
 #sentinelone
   - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone' }
+#Jenkins master
+  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins' }

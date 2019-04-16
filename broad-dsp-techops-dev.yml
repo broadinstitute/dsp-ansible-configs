@@ -49,6 +49,7 @@
       - ansible-role-stackdriver
       - ansible-role-yum-cron
       - ansible-role-sentinelone
+      - ansible-role-jenkins
 
 - hosts: duos-jenkins-slave
   tasks:
