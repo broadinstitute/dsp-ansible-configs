@@ -4,13 +4,23 @@ docker_edition: 'ce'
 docker_package: "docker-{{ docker_edition }}-18.09.3-3.el7"
 docker_package_state: present
 docker_install_compose: true
-docker_compose_version: "1.22.0"
+docker_compose_version: "3.7"
 docker_compose_path: /usr/local/bin/docker-compose
-#thinpool stuff
-docker_provision_thinpool_device_name: /dev/sdb
-docker_provision_thinpool_size_gb: 100
-docker_provision_thinpool_volume_group_name: vg_docker
-docker_provision_thinpool_logical_volume_name: docker-pool
+#overlay2 disk
+lvm_groups:
+  - vgname: vg_docker
+    disks:
+      - /dev/sdb
+    create: true
+    lvnames:
+      - lvname: docker-lvm
+        size: 100g
+        create: true
+        filesystem: xfs
+        mount: true
+        mntp: /var/lib/docker
+manage_lvm: true
+#jenkins vars
 jenkins_type: "master"
 jenkins_version: "2.60.3"
 jenkins_admin: dsptechops@broadinstitute.org
@@ -20,8 +30,8 @@ gitrepos:
   - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker' }
 #basepacks
   - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages' }
-#lvmthinlpool
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker-thinpool.git', name: 'ansible-role-docker-thinpool' }
+#lvm
+  - { address: 'https://github.com/broadinstitute/ansible-role-lvm.git', name: 'ansible-role-lvm' }
 #stackdriver
   - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver' }
 #yumcron
