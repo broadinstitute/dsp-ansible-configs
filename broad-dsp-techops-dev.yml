@@ -50,7 +50,7 @@
       - ansible-role-yum-cron
       - ansible-role-sentinelone
       - ansible-role-jenkins
-
+      - ansible-role-token-copy
 - hosts: duos-jenkins-slave
   tasks:
   - import_role:
