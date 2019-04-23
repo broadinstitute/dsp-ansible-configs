@@ -63,4 +63,5 @@
       - ansible-role-stackdriver
       - ansible-role-yum-cron
       - ansible-role-sentinelone
+      - ansible-role-token-copy
       - ansible-role-jenkins
