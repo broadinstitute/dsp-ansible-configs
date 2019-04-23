@@ -1,5 +1,7 @@
 ---
+#jenkins vars
 jenkins_type: "slave"
+#base packages
 packages:
   - jq
   - bind-utils
@@ -8,6 +10,11 @@ packages:
   - python36
   - python36-pip
   - java-1.8.0-openjdk
+#token copy vars
+bucket_path: gs://ms-jenkins-tokens/
+folder: duos-jenkins
+dest_path: /tmp/
+#role repos to clone
 gitrepos:
 #stackdriver
   - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver' }
@@ -19,3 +26,5 @@ gitrepos:
   - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages' }
 #Jenkins slave
   - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins' }
+#token Copy
+  - { address: 'https://github.com/broadinstitute/ansible-role-token-copy.git', name: 'ansible-role-token-copy' }
