@@ -1,4 +1,5 @@
 ---
+jenkins_type: "slave"
 gitrepos:
 #stackdriver
   - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver' }
@@ -8,3 +9,5 @@ gitrepos:
   - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone' }
 #basepacks
   - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages' }
+#Jenkins master
+  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins' }
