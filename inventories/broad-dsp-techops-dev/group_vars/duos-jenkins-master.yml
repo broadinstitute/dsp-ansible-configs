@@ -1,4 +1,13 @@
 ---
+#base packages
+packages:
+  - jq
+  - bind-utils
+  - git
+  - htop
+  - python36
+  - python36-pip
+  - java-1.8.0-openjdk
 #docker vars
 docker_edition: 'ce'
 docker_package: "docker-{{ docker_edition }}-18.09.3-3.el7"
