@@ -25,8 +25,6 @@ jenkins_type: "master"
 jenkins_version: "2.60.3"
 jenkins_admin: dsptechops@broadinstitute.org
 apache_url: "duos-jenkins.dsp-techops.broadinstitute.org"
-server_key: "{{ lookup('hashi_vault', 'secret=secret/dsde/dsp-techops/common/server.key') }}"
-server_cert: "{{ lookup('hashi_vault', 'secret=secret/dsde/dsp-techops/common/server.crt') }}"
 bucket_path: gs://ms-jenkins-tokens/
 folder: duos-jenkins
 dest_path: /tmp/

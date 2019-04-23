@@ -51,7 +51,7 @@
       - ansible-role-sentinelone
       - ansible-role-token-copy
       - ansible-role-jenkins
-      
+
 - hosts: duos-jenkins-slave
   tasks:
   - import_role:
