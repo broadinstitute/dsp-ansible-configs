@@ -1,5 +1,13 @@
 ---
 jenkins_type: "slave"
+packages:
+  - jq
+  - bind-utils
+  - git
+  - htop
+  - python36
+  - python36-pip
+  - java-1.8.0-openjdk
 gitrepos:
 #stackdriver
   - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver' }
