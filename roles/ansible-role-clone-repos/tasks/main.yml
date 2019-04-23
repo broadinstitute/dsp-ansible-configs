@@ -4,6 +4,6 @@
     repo: "{{ item.address }}"
     dest: "{{ rolepath }}/{{ item.name }}"
     clone: yes
-    update: no
+    update: yes
   with_items:
     - "{{ gitrepos }}"
