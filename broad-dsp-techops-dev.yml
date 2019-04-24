@@ -44,8 +44,8 @@
       name: "{{ item }}"
     with_items:
       - ansible-role-basepackages
-      - ansible-role-docker
       - ansible-role-lvm
+      - ansible-role-docker
       - ansible-role-stackdriver
       - ansible-role-yum-cron
       - ansible-role-sentinelone
