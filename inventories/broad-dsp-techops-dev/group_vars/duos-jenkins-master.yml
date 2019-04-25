@@ -22,7 +22,7 @@ lvm_groups:
 manage_lvm: true
 #jenkins vars
 jenkins_type: "master"
-jenkins_version: "2.60.3"
+jenkins_version: "lts"
 jenkins_admin: dsptechops@broadinstitute.org
 apache_url: "duos-jenkins.dsp-techops.broadinstitute.org"
 #token copy vars
