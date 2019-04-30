@@ -44,12 +44,12 @@
       name: "{{ item }}"
     with_items:
       - ansible-role-basepackages
+      - ansible-role-token-copy
       - ansible-role-lvm
       - ansible-role-docker
       - ansible-role-stackdriver
       - ansible-role-yum-cron
       - ansible-role-sentinelone
-      - ansible-role-token-copy
       - ansible-role-jenkins
 
 - hosts: duos-jenkins-slave
@@ -60,8 +60,8 @@
       name: "{{ item }}"
     with_items:
       - ansible-role-basepackages
+      - ansible-role-token-copy
       - ansible-role-stackdriver
       - ansible-role-yum-cron
       - ansible-role-sentinelone
-      - ansible-role-token-copy
       - ansible-role-jenkins
