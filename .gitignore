@@ -1,6 +1,8 @@
 *.swp
 *.retry
-!/roles/ansible-role-clone-repos*
-!/roles/requirements.yml
+roles/*
+!roles/ansible-role-clone-repos*
+!roles/ansible-role-local-filesystem*
+!roles/ansible-role-jenkins-user*
+!roles/requirements.yml
 !roles/README.md
-/roles/*
