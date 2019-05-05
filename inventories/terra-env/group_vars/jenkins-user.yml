@@ -1,0 +1,6 @@
+---
+gitrepos:
+#jenkins-user
+  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins-user.git', name: 'ansible-role-jenkins-user', version: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-local-filesystem.git', name: 'ansible-role-local-filesystem', version: 'master' }

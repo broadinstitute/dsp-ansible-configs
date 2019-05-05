@@ -2,7 +2,7 @@
 - hosts: localhost
   vars:
     gitrepos:
-    - { address: 'https://github.com/broadinstitute/ansible-role-configure.git', name: 'ansible-role-configure', version: 'master' }
+    - { address: 'https://github.com/broadinstitute/ansible-role-configure.git', name: 'ansible-role-configure', version: 'hf_terra_env'}
 
   tasks:
   - import_role:
