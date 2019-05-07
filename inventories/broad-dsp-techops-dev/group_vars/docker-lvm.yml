@@ -17,4 +17,4 @@ gitrepos:
 #basepacks
   - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages', version: 'master' }
 #lvmthinlpool
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker-thinpool.git, name: 'ansible-role-docker-thinpool', version: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker-thinpool.git', name: 'ansible-role-docker-thinpool', version: 'master' }
