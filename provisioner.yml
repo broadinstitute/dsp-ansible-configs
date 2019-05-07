@@ -2,7 +2,8 @@
 - hosts: localhost
   vars:
     gitrepos:
-    - { address: 'https://github.com/broadinstitute/ansible-role-configure.git', name: 'ansible-role-configure' }
+    - { address: 'https://github.com/broadinstitute/ansible-role-configure.git', name: 'ansible-role-configure', refspec: 'master'}
+
   tasks:
   - import_role:
       name: ansible-role-clone-repos
