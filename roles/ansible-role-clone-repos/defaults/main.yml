@@ -2,6 +2,6 @@
 rolepath: /var/lib/ansible/local/roles
 gitrepos:
 #ansiblepull
-  - { address: 'https://github.com/broadinstitute/ansible-role-configure.git', name: 'ansible-role-configure', refspec: 'master'}
+  - { address: 'https://github.com/broadinstitute/ansible-role-configure.git', name: 'ansible-role-configure', version: 'master' }
 #yumcron
-  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron', refspec: 'master'}
+  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron', version: 'master' }
