@@ -5,5 +5,6 @@
     dest: "{{ rolepath }}/{{ item.name }}"
     clone: yes
     update: yes
+    refspec: "{{ item.refspec }}"
   with_items:
     - "{{ gitrepos }}"

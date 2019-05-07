@@ -2,18 +2,6 @@
 rolepath: /var/lib/ansible/local/roles
 gitrepos:
 #ansiblepull
-  - { address: 'https://github.com/broadinstitute/ansible-role-configure.git', name: 'ansible-role-configure' }
-#docker
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker' }
-#lvm
-  - { address: 'https://github.com/broadinstitute/ansible-role-lvm.git', name: 'ansible-role-lvm' }
-#basepacks
-  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages' }
-#lvmthinlpool
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker-thinpool.git', name: 'ansible-role-docker-thinpool' }
-#stackdriver
-  - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-configure.git', name: 'ansible-role-configure', refspec: 'master'}
 #yumcron
-  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron' }
-#sentinelone
-  - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron', refspec: 'master'}
