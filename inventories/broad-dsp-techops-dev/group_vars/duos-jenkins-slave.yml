@@ -17,14 +17,14 @@ dest_path: /tmp/
 #role repos to clone
 gitrepos:
 #stackdriver
-  - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver, refspec: 'master' }
 #yumcron
-  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron, refspec: 'master' }
 #sentinelone
-  - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone, refspec: 'master' }
 #basepacks
-  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages, refspec: 'master' }
 #Jenkins slave
-  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins, refspec: 'master' }
 #token Copy
-  - { address: 'https://github.com/broadinstitute/ansible-role-token-copy.git', name: 'ansible-role-token-copy' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-token-copy.git', name: 'ansible-role-token-copy, refspec: 'master' }

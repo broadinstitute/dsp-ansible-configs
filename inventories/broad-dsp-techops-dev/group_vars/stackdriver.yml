@@ -1,10 +1,10 @@
 ---
 gitrepos:
 #stackdriver
-  - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver, refspec: 'master' }
 #yumcron
-  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron, refspec: 'master' }
 #sentinelone
-  - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone, refspec: 'master' }
 #basepacks
-  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages, refspec: 'master' }

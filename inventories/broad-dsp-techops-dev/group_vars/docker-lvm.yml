@@ -13,8 +13,8 @@ docker_provision_thinpool_volume_group_name: vg_docker
 docker_provision_thinpool_logical_volume_name: docker-pool
 gitrepos:
 #docker
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', refspec: 'master' }
 #basepacks
-  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages', refspec: 'master' }
 #lvmthinlpool
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker-thinpool.git, name: 'ansible-role-docker-thinpool' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker-thinpool.git, name: 'ansible-role-docker-thinpool', refspec: 'master' }
