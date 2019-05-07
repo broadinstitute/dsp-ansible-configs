@@ -1,3 +1,4 @@
+#test config
 - hosts: stackdriver
   tasks:
   - import_role:
@@ -7,7 +8,10 @@
     with_items:
       - ansible-role-basepackages
       - ansible-role-stackdriver
+      - ansible-role-yum-cron
+      - ansible-role-sentinelone
 
+#test config
 - hosts: docker-ol2
   tasks:
   - import_role:
@@ -19,6 +23,7 @@
       - ansible-role-lvm
       - ansible-role-docker
 
+#test config
 - hosts: docker-lvm
   tasks:
   - import_role:
@@ -29,3 +34,34 @@
       - ansible-role-basepackages
       - ansible-role-docker
       - ansible-role-docker-thinpool
+
+#duos/orsp hosts below
+- hosts: duos-jenkins-master
+  tasks:
+  - import_role:
+      name: ansible-role-clone-repos
+  - include_role:
+      name: "{{ item }}"
+    with_items:
+      - ansible-role-basepackages
+      - ansible-role-token-copy
+      - ansible-role-lvm
+      - ansible-role-docker
+      - ansible-role-stackdriver
+      - ansible-role-yum-cron
+      - ansible-role-sentinelone
+      - ansible-role-jenkins
+
+- hosts: duos-jenkins-slave
+  tasks:
+  - import_role:
+      name: ansible-role-clone-repos
+  - include_role:
+      name: "{{ item }}"
+    with_items:
+      - ansible-role-basepackages
+      - ansible-role-token-copy
+      - ansible-role-stackdriver
+      - ansible-role-yum-cron
+      - ansible-role-sentinelone
+      - ansible-role-jenkins

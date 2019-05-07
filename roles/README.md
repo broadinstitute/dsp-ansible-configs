@@ -1,3 +1,8 @@
+## roles are configured in the ansible-clone-repoclone defaults/main.yml
+##  By default it will clone all roles but you can specify in group vars to only clone what is needed.
+## If you add a new role please add it to defaults/main.yml
+```bash
+gitrepos:
 ---
 rolepath: /var/lib/ansible/local/roles
 gitrepos:
@@ -17,3 +22,5 @@ gitrepos:
   - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron' }
 #sentinelone
   - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone' }
+
+    ```
