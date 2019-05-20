@@ -1,4 +1,25 @@
 ---
+#docker vars
+docker_edition: 'ce'
+docker_package: "docker-{{ docker_edition }}-18.09.3-3.el7"
+docker_package_state: present
+docker_install_compose: true
+docker_compose_version: "1.24.0"
+docker_compose_path: /usr/local/bin/docker-compose
+#overlay2 disk
+lvm_groups:
+  - vgname: vg_docker
+    disks:
+      - /dev/sdb
+    create: true
+    lvnames:
+      - lvname: docker-lvm
+        size: 100g
+        create: true
+        filesystem: xfs
+        mount: true
+        mntp: /var/lib/docker
+manage_lvm: true
 #jenkins vars
 jenkins_type: "slave"
 #base packages
@@ -28,3 +49,7 @@ gitrepos:
   - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins, refspec: 'master' }
 #token Copy
   - { address: 'https://github.com/broadinstitute/ansible-role-token-copy.git', name: 'ansible-role-token-copy, refspec: 'master' }
+#docker
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker, refspec: 'master' }
+#lvm
+  - { address: 'https://github.com/broadinstitute/ansible-role-lvm.git', name: 'ansible-role-lvm, refspec: 'master' }
