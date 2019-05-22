@@ -22,12 +22,9 @@ lvm_groups:
 manage_lvm: true
 #jenkins vars
 jenkins_type: "slave"
-#base packages
-packages:
-  - jq
-  - bind-utils
-  - git
-  - htop
+#additional packages
+additional_packages:
+  - kubectl
   - python36
   - python36-pip
   - java-1.8.0-openjdk
@@ -38,18 +35,18 @@ dest_path: /tmp/
 #role repos to clone
 gitrepos:
 #stackdriver
-  - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver', refspec: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver', version: 'master' }
 #yumcron
-  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron', refspec: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron', version: 'master' }
 #sentinelone
-  - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone', refspec: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone', version: 'master' }
 #basepacks
-  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages', refspec: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages', version: 'master' }
 #Jenkins slave
-  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins', refspec: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins', version: 'master' }
 #token Copy
-  - { address: 'https://github.com/broadinstitute/ansible-role-token-copy.git', name: 'ansible-role-token-copy', refspec: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-token-copy.git', name: 'ansible-role-token-copy', version: 'master' }
 #docker
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', refspec: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: 'master' }
 #lvm
-  - { address: 'https://github.com/broadinstitute/ansible-role-lvm.git', name: 'ansible-role-lvm', refspec: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-lvm.git', name: 'ansible-role-lvm', version: 'master' }
