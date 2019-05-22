@@ -22,12 +22,9 @@ lvm_groups:
 manage_lvm: true
 #jenkins vars
 jenkins_type: "slave"
-#base packages
-packages:
-  - jq
-  - bind-utils
-  - git
-  - htop
+#additional packages
+additional_packages:
+  - kubectl
   - python36
   - python36-pip
   - java-1.8.0-openjdk
