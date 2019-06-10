@@ -1,1 +1,4 @@
 ---
+gitrepos:
+#jenkins-user
+  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins-user.git', name: 'ansible-role-jenkins-user', version: 'master' }
