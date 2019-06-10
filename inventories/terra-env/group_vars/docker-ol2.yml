@@ -12,3 +12,4 @@ docker_compose_path: /usr/local/bin/docker-compose
 gitrepos:
 #docker
   - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-local-filesystem.git', name: 'ansible-role-local-filesystem', version: 'master' }

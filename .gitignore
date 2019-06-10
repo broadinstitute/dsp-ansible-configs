@@ -2,7 +2,5 @@
 *.retry
 roles/*
 !roles/ansible-role-clone-repos*
-!roles/ansible-role-local-filesystem*
-!roles/ansible-role-jenkins-user*
 !roles/requirements.yml
 !roles/README.md
