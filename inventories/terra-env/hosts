@@ -1,6 +1,6 @@
 [docker-ol2]
-thurloe-[00:99]
+(.+-)*thurloe-[0-9]+
 
 [jenkins-user]
-thurloe-[00:99]
+(.+-)*thurloe-[0-9]+
 
