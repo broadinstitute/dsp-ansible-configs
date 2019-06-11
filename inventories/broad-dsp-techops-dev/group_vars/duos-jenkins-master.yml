@@ -1,4 +1,8 @@
 ---
+#additional packages
+additional_packages:
+  - python36
+  - python36-pip
 #docker vars
 docker_edition: 'ce'
 docker_package: "docker-{{ docker_edition }}-18.09.3-3.el7"
