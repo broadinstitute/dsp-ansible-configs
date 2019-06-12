@@ -34,7 +34,7 @@ bucket_path: gs://ms-jenkins-tokens/
 folder: duos-jenkins
 dest_path: /tmp/
 #role repos to clone
-gitrepos:
+jenkins_master_gitrepos__to_merge:
 #docker
   - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: 'master' }
 #basepacks
