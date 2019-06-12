@@ -1,22 +1,4 @@
 ---
-- name: add repos to fact
-  template:
-    src: repos.yml.j2
-    dest: /tmp/repos.yml
-  with_items:
-    - "{{ gitrepos }}"
-
-- name: Include vars of repo.yml
-  include_vars:
-    file: /tmp/repos.yml
-    name: gitrepos_loaded
-
-- name: Clone git repos
-  git:
-    repo: "{{ item.address }}"
-    dest: "{{ rolepath }}/{{ item.name }}"
-    clone: yes
-    update: yes
-    version: "{{ item.version }}"
-  with_items:
-   - "{{ gitrepos_loaded.get('gitrepos_rendered') }}"
+- name: show vars
+  debug:
+    var=hostvars[inventory_hostname]
