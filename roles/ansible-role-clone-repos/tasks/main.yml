@@ -13,10 +13,10 @@
 
 - name: Clone git repos
   git:
-    repo: "{{ address }}"
-    dest: "{{ rolepath }}/{{ name }}"
+    repo: "{{ item.address }}"
+    dest: "{{ rolepath }}/{{ item.name }}"
     clone: yes
     update: yes
-    version: "{{ version }}"
+    version: "{{ item.version }}"
   with_items:
    - "{{ gitrepos_rendered }}"
