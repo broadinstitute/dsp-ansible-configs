@@ -1,4 +1,10 @@
 ---
+- name: make sure ansible_merge_vars is installed
+  pip:
+    name: ansible_merge_vars
+    virtualenv: /usr/local/bin/ansible
+    virtualenv_site_packages: yes
+
 - name: Merge user variables
   merge_vars:
     suffix_to_merge: gitrepos__to_merge
