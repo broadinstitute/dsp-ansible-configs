@@ -1,5 +1,5 @@
 ---
-gitrepos_to_merge:
+gitrepos__to_merge:
 #stackdriver
   - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver', version: 'master' }
 #yumcron

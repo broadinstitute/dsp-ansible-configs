@@ -11,7 +11,7 @@ docker_provision_thinpool_device_name: /dev/sdb
 docker_provision_thinpool_size_gb: 20
 docker_provision_thinpool_volume_group_name: vg_docker
 docker_provision_thinpool_logical_volume_name: docker-pool
-gitrepos_to_merge:
+gitrepos__to_merge:
 #docker
   - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: 'master' }
 #basepacks
