@@ -33,7 +33,7 @@ bucket_path: gs://ms-jenkins-tokens/
 folder: duos-jenkins
 dest_path: /tmp/
 #role repos to clone
-gitrepos:
+duos-jenkins-slave_gitrepos__to_merge:
 #stackdriver
   - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver', version: 'master' }
 #yumcron
