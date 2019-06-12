@@ -1,4 +1,16 @@
 ---
-- name: show vars
-  debug:
-    var=hostvars[inventory_hostname]
+- name: Merge user variables
+  merge_vars:
+    suffix_to_merge: gitrepos
+    merged_var_name: merged_gitrepos
+    expected_type: 'dict'
+
+- name: Clone git repos
+  git:
+    repo: "{{ item.address }}"
+    dest: "{{ rolepath }}/{{ item.name }}"
+    clone: yes
+    update: yes
+    version: "{{ item.version }}"
+  with_items:
+   - "{{ merged_gitrepos }}"
