@@ -1,7 +1,7 @@
 ---
 - name: Merge user variables
   merge_vars:
-    suffix_to_merge: gitrepos
+    suffix_to_merge: gitrepos_to_merge
     merged_var_name: merged_gitrepos
     expected_type: 'dict'
 
