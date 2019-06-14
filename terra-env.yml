@@ -7,7 +7,6 @@
      with_items:
        - ansible-role-local-filesystem
        - ansible-role-docker
-       - ansible-role-jenkins-user
 
 - hosts: jenkins-user
   tasks:
@@ -17,5 +16,3 @@
        name: "{{ item}}"
      with_items:
        - ansible-role-jenkins-user
-       - ansible-role-local-filesystem
-       - ansible-role-docker
