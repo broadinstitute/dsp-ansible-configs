@@ -1,0 +1,6 @@
+---
+mongo-disk_filesystems__to_merge:
+  - { device: '/dev/disk/by-id/google-data', mountpoint: '/data' }
+
+mongo-disk_gitrepos__to_merge:
+  - { address: 'https://github.com/broadinstitute/ansible-role-local-filesystem.git', name: 'ansible-role-local-filesystem', version: '1.1.0' }
