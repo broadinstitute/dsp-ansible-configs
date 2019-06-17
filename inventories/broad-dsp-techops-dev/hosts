@@ -1,8 +1,8 @@
 [docker-ol2]
-dsp-mark-[01:02]
+dsp-mark-dev[201:202]
 
 [stackdriver]
-dsp-mark-[01:02]
+dsp-mark-dev[201:202]
 
 [duos-jenkins-master]
 dsp-duos-jenkins-master-dev[201:202]
