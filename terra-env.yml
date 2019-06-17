@@ -1,0 +1,18 @@
+- hosts: docker-ol2
+  tasks:
+   - import_role:
+       name: ansible-role-clone-repos
+   - include_role:
+       name: "{{ item }}"
+     with_items:
+       - ansible-role-local-filesystem
+       - ansible-role-docker
+
+- hosts: jenkins-user
+  tasks:
+   - import_role:
+       name: ansible-role-clone-repos
+   - include_role:
+       name: "{{ item}}"
+     with_items:
+       - ansible-role-jenkins-user

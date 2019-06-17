@@ -1,19 +1,8 @@
-[all:children]
-docker-lvm
-docker-ol2
-stackdriver
-duos-jenkins-master
-duos-jenkins-slave
-
 [docker-ol2]
-dsp-mark-dev[203:204]
-
-[docker-lvm]
 dsp-mark-dev[201:202]
 
 [stackdriver]
 dsp-mark-dev[201:202]
-dsp-mark-dev[301:302]
 
 [duos-jenkins-master]
 dsp-duos-jenkins-master-dev[201:202]
