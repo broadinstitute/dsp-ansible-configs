@@ -2,7 +2,7 @@
 - hosts: localhost
   vars:
     provisioner_gitrepos__to_merge:
-    - { address: 'https://github.com/broadinstitute/ansible-role-configure.git', name: 'ansible-role-configure', version: 'hf_terra_env'}
+    - { address: 'https://github.com/broadinstitute/ansible-role-configure.git', name: 'ansible-role-configure', version: '1.0.0'}
 
   tasks:
   - import_role:
