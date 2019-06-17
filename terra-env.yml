@@ -16,3 +16,10 @@
        name: "{{ item}}"
      with_items:
        - ansible-role-jenkins-user
+
+- hosts: thurloe
+  tasks:
+   - import_role:
+       name: ansible-role-clone-repos
+   - include_role:
+       name: ansible-role-docker-service

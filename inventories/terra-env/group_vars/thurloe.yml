@@ -1,0 +1,17 @@
+---
+owner: gmalkov
+service: thurloe
+config_files:
+  - ca-bundle.crt
+  - docker-compose.yaml
+  - mod_security_logging.conf
+  - newrelic-v4.yml
+  - newrelic.jar
+  - server.crt
+  - server.key
+  - site.conf
+  - sqlproxy-service-account.json
+  - sqlproxy.env
+  - tcell_agent.config
+  - thurloe-account.pem
+  - thurloe.conf
