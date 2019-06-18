@@ -1,4 +1,4 @@
 ---
 jenkins-user_gitrepos__to_merge:
 #jenkins-user
-  - { address: 'git@github.com:broadinstitute/ansible-role-jenkins-user.git', name: 'ansible-role-jenkins-user', version: '1.0.0' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins-user.git', name: 'ansible-role-jenkins-user', version: '1.0.0' }
