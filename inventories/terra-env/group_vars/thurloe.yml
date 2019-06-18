@@ -1,5 +1,5 @@
 ---
 thurloe_gitrepos__to_merge:
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.0' }
+  - { address: 'git@github.com:broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.0' }
 docker_service_owner: gmalkov
 docker_service_name: thurloe
