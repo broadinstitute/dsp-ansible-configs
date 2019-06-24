@@ -1,3 +1,4 @@
 ---
 opendj_gitrepos__to_merge:
   - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.0' }
+docker_service_health_check: 'ldapsearch -x -v -Z -h localhost -p 389 ""'
