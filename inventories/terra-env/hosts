@@ -1,9 +1,11 @@
 [docker-ol2]
 thurloe-[00:99]
+opendj-[00:99]
 mongo-[00:99]
 
 [jenkins-user]
 thurloe-[00:99]
+opendj-[00:99]
 mongo-[00:99]
 
 [mongo-disk]
@@ -11,3 +13,6 @@ mongo-[00:99]
 
 [thurloe]
 thurloe-[00:99]
+
+[opendj]
+opendj-[00:99]
