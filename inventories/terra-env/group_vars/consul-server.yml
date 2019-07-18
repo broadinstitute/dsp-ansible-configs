@@ -1,0 +1,3 @@
+---
+consul-server_gitrepos__to_merge:
+  - { address: 'https://github.com/broadinstitute/ansible-role-consul.git', name: 'ansible-role-consul', version: '1.0.0' }
