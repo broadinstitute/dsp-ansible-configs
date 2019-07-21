@@ -17,7 +17,7 @@
       with_items:
         - ansible-role-jenkins-user
 
-- hosts: thurloe,opendj,sam,rawls,rawls-backend,leonardo,leonardo-backend
+- hosts: thurloe,opendj,sam,rawls,rawls-backend,leonardo,leonardo-backend,mongo-disk
   tasks:
     - import_role:
         name: ansible-role-clone-repos
