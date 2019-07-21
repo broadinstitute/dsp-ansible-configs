@@ -1,6 +1,6 @@
 [docker-ol2]
-gce-tester-dev[000:999]
+aou-test-[00:99]
 
 [jenkins-user]
-gce-tester-dev[000:999]
+aou-test-[00:99]
 
