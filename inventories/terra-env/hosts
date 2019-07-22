@@ -10,6 +10,7 @@ rawls-[00:99]
 rawls-backend-[00:99]
 agora-mongo-[00:99]
 cromwell-runner-[00:99]
+cromwell-summarizer-[00:99]
 
 [jenkins-user]
 agora-[00:99]
@@ -23,6 +24,7 @@ mongo-[00:99]
 rawls-[00:99]
 rawls-backend-[00:99]
 cromwell-runner-[00:99]
+cromwell-summarizer-[00:99]
 
 [mongo-disk]
 mongo-[00:99]
@@ -47,6 +49,9 @@ opendj-[00:99]
 
 [cromwell-runner]
 cromwell-runner-[00:99]
+
+[cromwell-summarizer]
+cromwell-summarizer-[00:99]
 
 [sam]
 sam-[00:99]
