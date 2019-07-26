@@ -12,6 +12,8 @@ agora-mongo-[00:99]
 cromwell-runner-[00:99]
 cromwell-summarizer-[00:99]
 cromwell-[00:99]
+cromiam-[00:99]
+job-manager-[0:99]
 
 [jenkins-user]
 agora-[00:99]
@@ -27,6 +29,8 @@ rawls-backend-[00:99]
 cromwell-runner-[00:99]
 cromwell-summarizer-[00:99]
 cromwell-[00:99]
+cromiam-[00:99]
+job-manager-[0:99]
 
 [mongo-disk]
 mongo-[00:99]
@@ -48,6 +52,12 @@ leonardo-backend-[00:99]
 
 [opendj]
 opendj-[00:99]
+
+[cromiam]
+cromiam-[00:99]
+
+[job-manager]
+job-manager-[0:99]
 
 [cromwell]
 cromwell-[00:99]
