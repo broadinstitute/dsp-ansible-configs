@@ -15,6 +15,7 @@ cromwell-[00:99]
 cromiam-[00:99]
 job-manager-[00:99]
 orchestration-[00:99]
+elasticsearch-[00:99]
 
 [jenkins-user]
 agora-[00:99]
@@ -33,6 +34,7 @@ cromwell-[00:99]
 cromiam-[00:99]
 job-manager-[00:99]
 orchestration-[00:99]
+elasticsearch-[00:99]
 
 [mongo-disk]
 mongo-[00:99]
@@ -81,3 +83,6 @@ rawls-[00:99]
 
 [rawls-backend]
 rawls-backend-[00:99]
+
+[elasticsearch]
+elasticsearch-[00:99]
