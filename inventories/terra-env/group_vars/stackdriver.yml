@@ -1,0 +1,3 @@
+---
+thurloe_gitrepos__to_merge:
+  - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver', version: '1.0.0' }
