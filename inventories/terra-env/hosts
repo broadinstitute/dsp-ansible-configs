@@ -1,27 +1,79 @@
 [docker-ol2]
+agora-[00:99]
 thurloe-[00:99]
+leonardo-[00:99]
+leonardo-backend-[00:99]
 opendj-[00:99]
 sam-[00:99]
 mongo-[00:99]
 rawls-[00:99]
 rawls-backend-[00:99]
+agora-mongo-[00:99]
+cromwell-runner-[00:99]
+cromwell-summarizer-[00:99]
+cromwell-[00:99]
+cromiam-[00:99]
+job-manager-[00:99]
+orchestration-[00:99]
+elasticsearch-[00:99]
 
 [jenkins-user]
+agora-[00:99]
 thurloe-[00:99]
+leonardo-[00:99]
+leonardo-backend-[00:99]
 opendj-[00:99]
+agora-mongo-[00:99]
 sam-[00:99]
 mongo-[00:99]
 rawls-[00:99]
 rawls-backend-[00:99]
+cromwell-runner-[00:99]
+cromwell-summarizer-[00:99]
+cromwell-[00:99]
+cromiam-[00:99]
+job-manager-[00:99]
+orchestration-[00:99]
+elasticsearch-[00:99]
 
 [mongo-disk]
 mongo-[00:99]
 
+[agora-mongo]
+agora-mongo-[00:99]
+
+[agora]
+agora-[00:99]
+
 [thurloe]
 thurloe-[00:99]
 
+[leonardo]
+leonardo-[00:99]
+
+[leonardo-backend]
+leonardo-backend-[00:99]
+
 [opendj]
 opendj-[00:99]
+
+[cromiam]
+cromiam-[00:99]
+
+[job-manager]
+job-manager-[00:99]
+
+[cromwell]
+cromwell-[00:99]
+
+[orchestration]
+orchestration-[00:99]
+
+[cromwell-runner]
+cromwell-runner-[00:99]
+
+[cromwell-summarizer]
+cromwell-summarizer-[00:99]
 
 [sam]
 sam-[00:99]
@@ -31,3 +83,6 @@ rawls-[00:99]
 
 [rawls-backend]
 rawls-backend-[00:99]
+
+[elasticsearch]
+elasticsearch-[00:99]
