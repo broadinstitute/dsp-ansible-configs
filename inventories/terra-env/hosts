@@ -16,6 +16,7 @@ cromiam-[00:99]
 job-manager-[00:99]
 orchestration-[00:99]
 elasticsearch-[00:99]
+pagerduty-alert-[00:99]
 
 [jenkins-user]
 agora-[00:99]
@@ -35,6 +36,7 @@ cromiam-[00:99]
 job-manager-[00:99]
 orchestration-[00:99]
 elasticsearch-[00:99]
+pagerduty-alert-[00:99]
 
 [stackdriver]
 agora-[00:99]
@@ -93,6 +95,9 @@ cromwell-runner-[00:99]
 
 [cromwell-summarizer]
 cromwell-summarizer-[00:99]
+
+[pagerduty-alert]
+pagerduty-alert-[00:99]
 
 [sam]
 sam-[00:99]
