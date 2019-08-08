@@ -56,6 +56,7 @@ cromiam-[00:99]
 job-manager-[00:99]
 orchestration-[00:99]
 elasticsearch-[00:99]
+pagerduty-alert-[00:99]
 
 [mongo-disk]
 mongo-[00:99]
