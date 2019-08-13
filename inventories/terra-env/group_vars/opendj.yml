@@ -1,4 +1,8 @@
 ---
+docker_service_health_check: 'sudo yum install -y openldap* && ldapsearch -x -v -Z -h localhost -p 389 ""'
+opendj_filesystems__to_merge:
+  - device: '/dev/disk/by-id/google-opendj-data-disk'
+    mountpoint: '/local/opendj_data'
+
 opendj_gitrepos__to_merge:
   - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.0' }
-docker_service_health_check: 'sudo yum install -y openldap* && ldapsearch -x -v -Z -h localhost -p 389 ""'
