@@ -1,5 +1,6 @@
 ---
 docker_service_health_check: 'sudo yum install -y openldap* && ldapsearch -x -v -Z -h localhost -p 389 ""'
+
 opendj_filesystems__to_merge:
   - device: '/dev/disk/by-id/google-opendj-data-disk'
     mountpoint: '/local/opendj_data'
