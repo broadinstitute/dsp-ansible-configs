@@ -1,3 +1,8 @@
 ---
+
+elasticsearch_filesystems__to_merge:
+  - device: '/dev/disk/by-id/google-elasticsearch-data-disk'
+    mountpoint: '/local/elasticsearch'
+
 elasticsearch_gitrepos__to_merge:
   - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.0' }
