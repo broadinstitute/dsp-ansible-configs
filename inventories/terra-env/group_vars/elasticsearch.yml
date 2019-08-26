@@ -6,6 +6,7 @@ elasticsearch_filesystems__to_merge:
     mountpoint: '/local/application_data'
     owner: 1000
     group: 1000
+    mode: 755
 
 elasticsearch_gitrepos__to_merge:
   - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.0' }
