@@ -3,7 +3,7 @@ docker_service_health_check: 'curl http://localhost:9200/_cat/health'
 
 elasticsearch_filesystems__to_merge:
   - device: '/dev/disk/by-id/google-elasticsearch-data-disk'
-    mountpoint: '/local/elasticsearch'
+    mountpoint: '/local/application_data'
     owner: 1000
     group: 1000
 
