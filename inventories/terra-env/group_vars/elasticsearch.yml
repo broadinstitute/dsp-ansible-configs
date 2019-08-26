@@ -8,5 +8,12 @@ elasticsearch_filesystems__to_merge:
     group: 1000
     mode: 755
 
+elasticsearch_system_settings__to_merge:
+  - name: 'vm.max_map_count'
+    reload: yes
+    sysctl_set: yes
+    value: 262144
+
 elasticsearch_gitrepos__to_merge:
   - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.0' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-os-settings.git', name: 'ansible-role-os-settings', version: 'rl-sysctl' }
