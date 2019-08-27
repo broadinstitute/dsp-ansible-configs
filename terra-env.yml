@@ -6,6 +6,7 @@
         name: "{{ item }}"
       with_items:
         - ansible-role-local-filesystem
+        - ansible-role-os-settings
         - ansible-role-docker
 
 - hosts: jenkins-user
