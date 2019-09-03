@@ -4,6 +4,9 @@ docker_service_health_check: 'sudo docker exec app_mongodb_1 /bin/bash -c mongo'
 agora-mongo_filesystems__to_merge:
   - device: '/dev/disk/by-id/google-agora-mongo-data-disk'
     mountpoint: '/local/mongodb_data'
+    owner: 1001
+    group: 1001
+    mode: 755
 
 agora-mongo_gitrepos__to_merge:
   - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.0' }
