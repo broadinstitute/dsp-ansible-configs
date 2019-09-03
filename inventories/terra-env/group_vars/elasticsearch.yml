@@ -5,7 +5,7 @@ elasticsearch_filesystems__to_merge:
   - device: '/dev/disk/by-id/google-elasticsearch-data-disk'
     mountpoint: '/local/application_data'
     owner: 1000
-    group: 0
+    group: 1000
     mode: 755
 
 elasticsearch_ossettings__to_merge:
