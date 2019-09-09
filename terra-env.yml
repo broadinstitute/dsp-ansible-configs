@@ -18,7 +18,7 @@
       with_items:
         - ansible-role-jenkins-user
 
-- hosts: thurloe,opendj,sam,rawls,rawls-backend,leonardo,leonardo-backend,agora,agora-mongo,cromwell-runner,cromwell-summarizer,cromwell,cromiam,job-manager,firecloud-orchestration,elasticsearch
+- hosts: thurloe,opendj,sam,rawls,rawls-backend,leonardo,leonardo-backend,agora,agora-mongo,cromwell-runner,cromwell-summarizer,cromwell,cromiam,job-manager,firecloud-orchestration,elasticsearch,consent,consent-mongo,consent-ontology
   tasks:
     - import_role:
         name: ansible-role-clone-repos
