@@ -11,5 +11,6 @@ docker_compose_version: "1.24.0"
 docker_compose_path: /usr/local/bin/docker-compose
 docker-ol2_gitrepos__to_merge:
 #docker
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: '2.5.2' }
   - { address: 'https://github.com/broadinstitute/ansible-role-local-filesystem.git', name: 'ansible-role-local-filesystem', version: '1.1.0' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: 'rl-set-ipv4-forwarding' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-os-settings.git', name: 'ansible-role-os-settings', version: '0.0.0' }
