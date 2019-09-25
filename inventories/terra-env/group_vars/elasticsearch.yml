@@ -15,4 +15,4 @@ elasticsearch_ossettings__to_merge:
     value: 262144
 
 elasticsearch_gitrepos__to_merge:
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.0' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.1' }
