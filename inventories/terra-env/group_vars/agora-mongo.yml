@@ -9,4 +9,4 @@ agora-mongo_filesystems__to_merge:
     mode: 755
 
 agora-mongo_gitrepos__to_merge:
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.0' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.1' }
