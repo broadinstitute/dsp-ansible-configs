@@ -1,0 +1,3 @@
+cromwell_gitrepos__to_merge:
+#docker
+  - { address: 'https://github.com/broadinstitute/ansible-role-os-settings.git', name: 'ansible-role-os-settings', version: '0.0.0' }
