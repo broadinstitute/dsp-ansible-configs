@@ -1,0 +1,12 @@
+[docker-ol2]
+cromwell-500-[00:99]
+jg-cromwell-100-[00:99]
+
+[cromwell]
+cromwell-500-[00:99]
+jg-cromwell-100-[00:99]
+
+[jenkins-user]
+cromwell-500-[00:99]
+jg-cromwell-100-[00:99]
+
