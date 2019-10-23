@@ -1,3 +1,6 @@
 ---
 cromwell-runner_gitrepos__to_merge:
   - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.1' }
+stackdriver_tail_logs:
+  - name: cromwell
+    path: /var/log/cromwell/cromwell
