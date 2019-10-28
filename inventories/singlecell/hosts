@@ -1,0 +1,11 @@
+[docker-ol2]
+singlecell-mongo-[00:99]
+
+[jenkins-user]
+singlecell-mongo-[00:99]
+
+[stackdriver]
+singlecell-mongo-[00:99]
+
+[singlecell-mongo]
+singlecell-mongo-[00:99]
