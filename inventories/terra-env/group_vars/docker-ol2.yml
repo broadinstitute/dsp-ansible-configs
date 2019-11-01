@@ -4,7 +4,7 @@ docker-ol2_filesystems__to_merge:
   - { device: '/dev/disk/by-id/google-docker', mountpoint: '/var/lib/docker' }
 #docker vars
 docker_edition: 'ce'
-docker_config: '{"mtu": 1450 }'
+docker_config: '{"mtu": 1000 }'
 docker_package: "docker-{{ docker_edition }}-18.09.6-3.el7"
 docker_package_state: present
 docker_install_compose: true
