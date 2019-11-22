@@ -1,3 +1,10 @@
 ---
 sam_gitrepos__to_merge:
   - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.1' }
+stackdriver_tail_logs:
+  - name: sam
+    path: /var/log/messages
+    format: '/(?<time>[^ ]* {1,2}[^ ]* [^ ]*) (?<host>[^ ]*) (?<ident>[a-zA-Z0-9_\/\.\-]*)(?:\[(?<pid>[0-9]+)\])?(?:[^\:]*\:)? (?:\[(?<severity>[A-Z]+)\]) *(?<message>.*)$/'
+  - name: sam_proxy
+    path: /var/log/messages
+    format: '/^(?<time>[^ ]* {1,2}[^ ]* [^ ]*) (?<host>[^ ]*) (?<ident>[a-zA-Z0-9_\/\.\-]*)(?:\[(?<pid>[0-9]+)\])?(?:[^\:]*\:)? (?<host>[^ ]*) [^\[]* \[(?<time>[^\]]*)\] \d+ \+ "(?<method>\S+)(?: +(?<path>[^ ]*) +\S*)?" (?<code>[^ ]*) (?<size>[^ ]*)(?: "(?<referer>[^\"]*)" "(?<agent>[^\"]*)")?$/'
