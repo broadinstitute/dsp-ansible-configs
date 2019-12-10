@@ -4,3 +4,11 @@ cromwell_gitrepos__to_merge:
 
 cromwell_filesystems__to_merge:
   - { device: '/dev/disk/by-id/google-data', mountpoint: '/local/cromwell_logs' }
+
+- name: fluentd pos directory
+  file:
+    path: /local/cromwell_logs/pos
+    state: directory
+    owner: root
+    group: root
+    mode: 0775
