@@ -18,6 +18,16 @@
         - ansible-role-local-filesystem
         - ansible-role-os-settings
 
+- hosts: data-disk
+  tasks:
+    - import_role:
+        name: ansible-role-clone-repos
+    - include_role:
+        name: "{{ item }}"
+      with_items:
+        - ansible-role-local-filesystem
+        - ansible-role-os-settings
+
 - hosts: jenkins-user
   tasks:
     - import_role:
