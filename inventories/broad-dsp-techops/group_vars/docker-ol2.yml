@@ -1,0 +1,15 @@
+---
+#overlay2 disk
+docker-ol2_filesystems__to_merge:
+  - { device: '/dev/disk/by-id/google-docker', mountpoint: '/var/lib/docker' }
+#docker vars
+docker_edition: 'ce'
+docker_package: "docker-{{ docker_edition }}-19.03.5-3.el7"
+docker_package_state: present
+docker_install_compose: true
+docker_compose_version: "1.24.0"
+docker_compose_path: /usr/bin/docker-compose
+docker-ol2_gitrepos__to_merge:
+#docker
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: '2.6.0' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-local-filesystem.git', name: 'ansible-role-local-filesystem', version: '1.1.1' }

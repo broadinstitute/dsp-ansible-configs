@@ -1,0 +1,7 @@
+[docker-ol2]
+batch-jenkins-worker-1-[01:99]
+
+[jenkins-user]
+batch-jenkins-worker-1-[01:99]
+
+
