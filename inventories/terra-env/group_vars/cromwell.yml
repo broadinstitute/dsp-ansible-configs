@@ -5,3 +5,4 @@ stackdriver_custom_configs:
   - name: cromwell
     template: multiline
     path: /var/log/cromwell/cromwell
+docker_service_health_check: 'curl -k -f https://localhost/engine/v1/status'
