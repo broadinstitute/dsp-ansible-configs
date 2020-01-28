@@ -1,0 +1,8 @@
+
+- name: fluentd pos directory
+  file:
+    path: /local/cromwell_logs/pos
+    state: directory
+    owner: root
+    group: root
+    mode: 0775
