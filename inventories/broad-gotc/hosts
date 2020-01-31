@@ -12,6 +12,8 @@ jg-cromwell-100-[00:99]
 [jenkins-user]
 cromwell-500-[00:99]
 jg-cromwell-100-[00:99]
+clio-300-[00:99]
+elasticsearch-300-[00:99]
 
 [data-disk]
 graphite-100-[00:99]
