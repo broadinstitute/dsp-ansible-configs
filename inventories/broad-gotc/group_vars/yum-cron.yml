@@ -17,4 +17,4 @@ yum_cron_clean_when: "monthly"
 
 yum-cron_gitrepos__to_merge:
 #yum cron
-  - { address: 'https://github.com/broadinstitute/ansible-yum-cron.git', name: 'ansible-yum-cron', version: 'hf_fix_daily_options' }
+  - { address: 'https://github.com/broadinstitute/ansible-yum-cron.git', name: 'ansible-yum-cron', version: '0.1.1' }
