@@ -1,0 +1,20 @@
+---
+yum_conf_hourly_update_level: "minimal-security-severity:Critical" 
+yum_cron_hourly_update_message: yes
+yum_cron_hourly_download_updates: yes
+yum_cron_hourly_apply_updates: yes
+yum_cron_hourly_base_options:
+ - "exclude=docker*"
+
+yum_cron_daily_update_level: default
+yum_cron_daily_update_message: yes
+yum_cron_daily_download_updates: yes
+yum_cron_daily_apply_updates: yes
+yum_cron_daily_base_options: "{{ yum_cron_hourly_base_options }}"
+
+yum_cron_clean_enabled: True
+yum_cron_clean_when: "monthly"
+
+yum-cron_gitrepos__to_merge:
+#yum cron
+  - { address: 'https://github.com/broadinstitute/ansible-yum-cron.git', name: 'ansible-yum-cron', version: '0.1.1' }

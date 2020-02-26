@@ -28,6 +28,15 @@
         - ansible-role-local-filesystem
         - ansible-role-os-settings
 
+- hosts: yum-cron
+  tasks:
+    - import_role:
+        name: ansible-role-clone-repos
+    - include_role:
+        name: "{{ item}}"
+      with_items:
+        - ansible-yum-cron
+
 - hosts: jenkins-user
   tasks:
     - import_role:
