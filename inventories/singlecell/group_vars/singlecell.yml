@@ -1,0 +1,7 @@
+---
+singlecell-mongo_filesystems__to_merge:
+  - device: '/dev/disk/by-id/google-singlecell-data-disk'
+    mountpoint: '/home/jenkins/deployments'
+    owner: 1001
+    group: 1001
+    mode: 755

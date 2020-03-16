@@ -27,3 +27,12 @@
       with_items:
         - ansible-role-docker-service
         - ansible-role-stackdriver
+
+- hosts: singlecell
+  tasks:
+    - import_role:
+        name: ansible-role-clone-repos
+    - include_role:
+        name: "{{ item}}"
+      with_items:
+        - ansible-role-stackdriver
