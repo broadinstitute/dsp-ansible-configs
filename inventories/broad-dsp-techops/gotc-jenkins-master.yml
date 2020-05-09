@@ -1,0 +1,6 @@
+---
+#additional packages
+additional_packages:
+  - python36
+  - python36-pip
+

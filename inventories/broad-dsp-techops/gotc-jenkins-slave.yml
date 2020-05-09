@@ -1,0 +1,9 @@
+---
+#jenkins vars
+jenkins_type: "slave"
+#additional packages
+additional_packages:
+  - kubectl
+  - python36
+  - python36-pip
+  - java-1.8.0-openjdk

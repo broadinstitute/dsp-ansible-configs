@@ -1,0 +1,5 @@
+[gotc-jenkins-master]
+dsp-jenkins-prod103
+
+[gotc-jenkins-slave]
+dsp-gotc-jenkins-slave-prod[101:102]
