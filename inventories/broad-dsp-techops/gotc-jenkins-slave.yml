@@ -7,3 +7,6 @@ additional_packages:
   - python36
   - python36-pip
   - java-1.8.0-openjdk
+  - pip:
+      - argparse
+      - python-dateutil
