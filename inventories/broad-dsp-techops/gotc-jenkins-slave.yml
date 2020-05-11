@@ -9,4 +9,4 @@ additional_packages:
   - java-1.8.0-openjdk
 gotc-jenkins-master_gitrepos__to_merge:
   #Jenkins slave
-  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins', version: 'slave' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins', version: 'master' }
