@@ -23,3 +23,6 @@ cromwell-500-[00:99]
 jg-cromwell-100-[00:99]
 clio-300-[00:99]
 elasticsearch-300-[00:99]
+
+[gotc-build-dev]
+gotc-build-dev[100:199]
