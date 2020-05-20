@@ -6,7 +6,8 @@ additional_packages:
   - kubectl
   - python36
   - python36-pip
-  - java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+#  - java-1.8.0-openjdk
+#  - java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
 gotc-jenkins-slave_gitrepos__to_merge:
   #Jenkins slave
   - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins', version: 'ra_master_gotc_jenkins_prod' }
