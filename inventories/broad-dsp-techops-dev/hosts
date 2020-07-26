@@ -9,3 +9,6 @@ dsp-duos-jenkins-master-dev[201:202]
 
 [duos-jenkins-slave]
 dsp-duos-jenkins-slave-dev[201:204]
+
+[gotc-jenkins-slave]
+dsp-gotc-jenkins-slave-dev[201:299]
