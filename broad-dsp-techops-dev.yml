@@ -68,6 +68,7 @@
       - ansible-role-sentinelone
       - ansible-role-jenkins
 
+#gotc/orsp hosts below
 - hosts: gotc-jenkins-slave
   tasks:
   - import_role:
