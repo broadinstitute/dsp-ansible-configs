@@ -29,9 +29,9 @@ additional_packages:
   - python36-pip
   - java-1.8.0-openjdk
 #token copy vars
-#bucket_path: gs://broad-dsp-gotc-prod-tokens/
-#folder: broad-dsp-gotc-prod-tokens
-#dest_path: /etc/
+bucket_path: gs://broad-dsp-techops-tokens/
+folder: /jenkins/vault-token-dsde
+dest_path: /etc/
 #role repos to clone
 gotc-jenkins-slave_gitrepos__to_merge:
 ##stackdriver
