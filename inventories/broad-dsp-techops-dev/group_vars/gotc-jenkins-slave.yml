@@ -31,7 +31,7 @@ additional_packages:
 #token copy vars
 bucket_path: gs://broad-dsp-techops-tokens/
 gcloud_project: broad-dsp-techops
-folder: jenkins/vault-token-dsde
+folder: jenkins
 dest_path: /etc/
 #role repos to clone
 gotc-jenkins-slave_gitrepos__to_merge:
