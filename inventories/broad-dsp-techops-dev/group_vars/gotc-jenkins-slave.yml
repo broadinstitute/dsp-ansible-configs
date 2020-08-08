@@ -29,8 +29,9 @@ additional_packages:
   - python36-pip
   - java-1.8.0-openjdk
 #token copy vars
-bucket_path: gs://broad-dsp-techops-tokens
-folder: /jenkins/vault-token-dsde
+bucket_path: gs://broad-dsp-techops-tokens/
+gcloud_project: dsp-techops
+folder: jenkins/vault-token-dsde
 dest_path: /etc/
 #role repos to clone
 gotc-jenkins-slave_gitrepos__to_merge:
@@ -45,7 +46,7 @@ gotc-jenkins-slave_gitrepos__to_merge:
 ##Jenkins slave
   - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins', version: 'master' }
 ##token Copy
-  - { address: 'https://github.com/broadinstitute/ansible-role-token-copy.git', name: 'ansible-role-token-copy', version: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-token-copy.git', name: 'ansible-role-token-copy', version: 'ra_master_add_gcloud_project' }
 ##docker
   - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: 'master' }
 ##lvm
