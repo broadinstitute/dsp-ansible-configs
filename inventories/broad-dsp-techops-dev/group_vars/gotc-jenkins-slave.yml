@@ -29,7 +29,7 @@ additional_packages:
   - python36-pip
   - java-1.8.0-openjdk
 #token copy vars
-bucket_path: gs://broad-dsp-techops-tokens/
+bucket_path: gs://broad-dsp-techops-tokens
 folder: /jenkins/vault-token-dsde
 dest_path: /etc/
 #role repos to clone
