@@ -30,7 +30,7 @@ additional_packages:
   - java-1.8.0-openjdk
 #token copy vars
 bucket_path: gs://broad-dsp-techops-tokens/
-gcloud_project: dsp-techops
+gcloud_project: broad-dsp-techops
 folder: jenkins/vault-token-dsde
 dest_path: /etc/
 #role repos to clone
