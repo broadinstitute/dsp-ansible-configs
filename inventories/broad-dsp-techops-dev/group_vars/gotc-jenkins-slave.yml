@@ -46,7 +46,7 @@ gotc-jenkins-slave_gitrepos__to_merge:
 ##basepacks
   - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages', version: 'master' }
 ##Jenkins slave
-  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins', version: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins', version: 'ra_master_gotc_jenkins_200_slave' }
 ##token Copy
   - { address: 'https://github.com/broadinstitute/ansible-role-token-copy.git', name: 'ansible-role-token-copy', version: 'ra_master_add_gcloud_project' }
 ##docker
