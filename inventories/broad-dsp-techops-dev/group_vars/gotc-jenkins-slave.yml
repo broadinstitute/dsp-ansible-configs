@@ -33,8 +33,8 @@ bucket_path: gs://broad-dsp-techops-tokens/
 gcloud_project: broad-dsp-techops
 folder: jenkins
 dest_path: /etc/
-token_name: vault-token-dsde
-vault_addr: echo https://clotho.broadinstitute.org:8200
+token_name: "vault-token-dsde"
+vault_addr: "https://clotho.broadinstitute.org:8200"
 #role repos to clone
 gotc-jenkins-slave_gitrepos__to_merge:
 ##stackdriver
