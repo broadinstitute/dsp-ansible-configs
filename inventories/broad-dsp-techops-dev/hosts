@@ -14,9 +14,6 @@ dsp-gotc-jenkins-slave-dev[201:299]
 [jenkins-user]
 dsp-gotc-jenkins-slave-dev[201:299]
 
-[sbt]
-dsp-gotc-jenkins-slave-dev[201:299]
-
 [stackdriver]
 dsp-mark-dev[201:202]
 

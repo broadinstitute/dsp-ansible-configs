@@ -32,10 +32,9 @@ vault_addr: "https://clotho.broadinstitute.org:8200"
 gotc-jenkins-slave_gitrepos__to_merge:
 ##basepacks
   - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages', version: 'master' }
-##additionalpacks
-  - { address: 'https://github.com/broadinstitute/ansible-role-addpackages.git', name: 'ansible-role-addpackages', version: 'master' }
-
 ##token Copy
   - { address: 'https://github.com/broadinstitute/ansible-role-token-copy.git', name: 'ansible-role-token-copy', version: 'ra_master_add_gcloud_project' }
 ##docker
   - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: 'master' }
+## sbt
+ - { address: 'https://github.com/broadinstitute/ansible-role-sbt.git', name: 'ansible-role-sbt', version: 'master' }
