@@ -20,7 +20,6 @@
       name: "{{ item }}"
     with_items:
       - ansible-role-basepackages
-      - ansible-role-lvm
       - ansible-role-docker
 
 #test config
