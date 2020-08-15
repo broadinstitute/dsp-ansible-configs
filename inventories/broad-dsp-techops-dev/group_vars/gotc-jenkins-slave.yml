@@ -37,4 +37,4 @@ gotc-jenkins-slave_gitrepos__to_merge:
 ##docker
   - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: 'master' }
 ## sbt
- - { address: 'https://github.com/broadinstitute/ansible-role-sbt.git', name: 'ansible-role-sbt', version: 'master' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-sbt.git', name: 'ansible-role-sbt', version: 'master' }
