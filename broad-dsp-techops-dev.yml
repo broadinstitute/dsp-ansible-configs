@@ -77,9 +77,6 @@
       name: "{{ item }}"
     with_items:
       - ansible-role-basepackages
-      - ansible-role-lvm
       - ansible-role-docker
       - ansible-role-token-copy
-      - ansible-role-stackdriver
       - ansible-role-yum-cron
-      - ansible-role-jenkins
