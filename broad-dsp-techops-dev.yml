@@ -80,3 +80,4 @@
       - ansible-role-docker
       - ansible-role-token-copy
       - ansible-role-yum-cron
+      - ansible-role-sbt
