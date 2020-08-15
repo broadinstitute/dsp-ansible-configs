@@ -1,33 +1,26 @@
 ---
-#docker vars
-docker_edition: 'ce'
-docker_package: "docker-{{ docker_edition }}-18.09.3-3.el7"
-docker_package_state: present
-docker_install_compose: true
-docker_compose_version: "1.24.0"
-docker_compose_path: /usr/local/bin/docker-compose
-#overlay2 disk
-lvm_groups:
-  - vgname: vg_docker
-    disks:
-      - /dev/sdb
-    create: true
-    lvnames:
-      - lvname: docker-lvm
-        size: 100g
-        create: true
-        filesystem: xfs
-        mount: true
-        mntp: /var/lib/docker
-manage_lvm: true
 #jenkins vars
 jenkins_type: "slave"
+
 #additional packages
 additional_packages:
+  - bind-utils
+  - google-cloud-sdk
+  - curl
+  - java-1.8.0-openjdk
+  - jq
   - kubectl
+  - libcurl-devel
+  - libxslt-devel
+  - libxml2-devel
+  - pyOpenSSL
   - python36
   - python36-pip
-  - java-1.8.0-openjdk
+  - sbt
+  - telnet
+  - wget
+  - zip
+
 #token copy vars
 bucket_path: gs://broad-dsp-techops-tokens/
 gcloud_project: broad-dsp-techops
@@ -35,21 +28,12 @@ folder: jenkins
 dest_path: /etc/
 token_name: "vault-token-dsde"
 vault_addr: "https://clotho.broadinstitute.org:8200"
+
 #role repos to clone
 gotc-jenkins-slave_gitrepos__to_merge:
-##stackdriver
-  - { address: 'https://github.com/broadinstitute/ansible-role-stackdriver.git', name: 'ansible-role-stackdriver', version: 'master' }
-##yumcron
-  - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron', version: 'master' }
-##sentinelone
-#  - { address: 'https://github.com/broadinstitute/ansible-role-sentinelone.git', name: 'ansible-role-sentinelone', version: 'master' }
 ##basepacks
   - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages', version: 'master' }
-##Jenkins slave
-  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins.git', name: 'ansible-role-jenkins', version: 'ra_master_gotc_jenkins_200_slave' }
 ##token Copy
   - { address: 'https://github.com/broadinstitute/ansible-role-token-copy.git', name: 'ansible-role-token-copy', version: 'ra_master_add_gcloud_project' }
 ##docker
   - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: 'master' }
-##lvm
-  - { address: 'https://github.com/broadinstitute/ansible-role-lvm.git', name: 'ansible-role-lvm', version: 'master' }

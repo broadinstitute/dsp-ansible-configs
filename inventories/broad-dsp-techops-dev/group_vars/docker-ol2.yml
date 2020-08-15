@@ -1,29 +1,15 @@
 ---
+#overlay2 disk
+docker-ol2_filesystems__to_merge:
+  - { device: '/dev/disk/by-id/google-docker', mountpoint: '/var/lib/docker' }
 #docker vars
 docker_edition: 'ce'
-docker_package: "docker-{{ docker_edition }}-18.09.3-3.el7"
+docker_package: "docker-{{ docker_edition }}-19.03.12-3.el7"
 docker_package_state: present
 docker_install_compose: true
-docker_compose_version: "1.22.0"
-docker_compose_path: /usr/local/bin/docker-compose
-#overlay2 disk
-lvm_groups:
-  - vgname: vg_docker
-    disks:
-      - /dev/sdb
-    create: true
-    lvnames:
-      - lvname: docker-lvm
-        size: 20g
-        create: true
-        filesystem: xfs
-        mount: true
-        mntp: /var/lib/docker
-manage_lvm: true
+docker_compose_version: "1.26.2"
+docker_compose_path: /usr/bin/docker-compose
 docker-ol2_gitrepos__to_merge:
-#docker
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: 'master' }
-#lvm
-  - { address: 'https://github.com/broadinstitute/ansible-role-lvm.git', name: 'ansible-role-lvm', version: 'master' }
-#basepacks
-  - { address: 'https://github.com/broadinstitute/ansible-role-basepackages.git', name: 'ansible-role-basepackages', version: 'master' }
+  #docker
+  - { address: 'https://github.com/broadinstitute/ansible-role-docker.git', name: 'ansible-role-docker', version: '2.6.0' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-local-filesystem.git', name: 'ansible-role-local-filesystem', version: '1.1.1' }
