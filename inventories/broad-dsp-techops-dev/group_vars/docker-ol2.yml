@@ -1,7 +1,7 @@
 ---
 #overlay2 disk
 docker-ol2_filesystems__to_merge:
-  - { device: '/dev/disk/by-id/google-docker', mountpoint: '/var/lib/docker' }
+  - { device: '/dev/disk/by-id/google-docker', mountpoint: '/var/lib/docker', force: yes}
 
 #docker vars
 docker_edition: 'ce'
