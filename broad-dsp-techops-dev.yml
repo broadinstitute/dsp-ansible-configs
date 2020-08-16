@@ -58,7 +58,6 @@
 
 
 
-
 - hosts: docker-ol2
   tasks:
     - import_role:
@@ -78,7 +77,6 @@
     with_items:
       - ansible-role-basepackages
       - ansible-role-docker
-      - ansible-role-local-filesystem
       - ansible-role-token-copy
       - ansible-role-sbt
 
