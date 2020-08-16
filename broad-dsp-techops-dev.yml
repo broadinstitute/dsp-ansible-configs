@@ -82,15 +82,6 @@
       - ansible-role-token-copy
       - ansible-role-sbt
 
-- hosts: sbt
-  tasks:
-    - import_role:
-        name: ansible-role-sbt
-    - include_role:
-        name: "{{ item}}"
-      with_items:
-        - ansible-role-sbt
-
 - hosts: yum-cron
   tasks:
     - import_role:
