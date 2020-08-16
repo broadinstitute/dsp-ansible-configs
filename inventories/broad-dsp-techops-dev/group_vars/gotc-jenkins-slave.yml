@@ -29,7 +29,7 @@ token_name: "vault-token-dsde"
 vault_addr: "https://clotho.broadinstitute.org:8200"
 
 #sbt vars
-sbt_version: "0.13.16-0"
+sbt_version: "0.13.16"
 
 #role repos to clone
 gotc-jenkins-slave_gitrepos__to_merge:
