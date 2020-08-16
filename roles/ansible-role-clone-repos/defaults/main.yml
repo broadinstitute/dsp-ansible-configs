@@ -5,3 +5,5 @@ gitrepos:
   - { address: 'https://github.com/broadinstitute/ansible-role-configure.git', name: 'ansible-role-configure', version: 'master' }
 #yumcron
   - { address: 'https://github.com/broadinstitute/ansible-role-yum-cron.git', name: 'ansible-role-yum-cron', version: 'master' }
+# sbt
+- { address: 'https://github.com/broadinstitute/ansible-role-sbt.git', name: 'ansible-role-sbt', version: 'master' }
