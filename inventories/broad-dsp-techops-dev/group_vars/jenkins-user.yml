@@ -1,4 +1,4 @@
 ---
 jenkins-user_gitrepos__to_merge:
 #jenkins-user
-  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins-user.git', name: 'ansible-role-jenkins-user', version: 'ansible-role-jenkins-user' }
+  - { address: 'https://github.com/broadinstitute/ansible-role-jenkins-user.git', name: 'ansible-role-jenkins-user', version: 'ra_master_create_ssh_dir' }
