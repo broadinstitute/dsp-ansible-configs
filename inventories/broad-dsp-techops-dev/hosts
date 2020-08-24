@@ -1,11 +1,21 @@
 [docker-ol2]
 dsp-mark-dev[201:202]
-
-[stackdriver]
-dsp-mark-dev[201:202]
+dsp-gotc-jenkins-slave-dev[201:299]
 
 [duos-jenkins-master]
 dsp-duos-jenkins-master-dev[201:202]
 
 [duos-jenkins-slave]
 dsp-duos-jenkins-slave-dev[201:204]
+
+[gotc-jenkins-slave]
+dsp-gotc-jenkins-slave-dev[201:299]
+
+[jenkins-user]
+dsp-gotc-jenkins-slave-dev[201:299]
+
+[stackdriver]
+dsp-mark-dev[201:202]
+
+[yum-cron]
+dsp-gotc-jenkins-slave-dev[201:299]
