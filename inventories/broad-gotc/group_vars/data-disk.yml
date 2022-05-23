@@ -1,7 +1,6 @@
-cromwell_gitrepos__to_merge:
-#docker
+elastic_gitrepos__to_merge:
   - { address: 'https://github.com/broadinstitute/ansible-role-os-settings.git', name: 'ansible-role-os-settings', version: '0.0.0' }
 
-cromwell_filesystems__to_merge:
-  - { device: '/dev/disk/by-id/google-data', mountpoint: '/local/data' }
+elastic_filesystems__to_merge:
+  - { device: '/dev/disk/by-id/google-data', mountpoint: '/local', owner: 1000, group: 1000, mode: 755 }
 
