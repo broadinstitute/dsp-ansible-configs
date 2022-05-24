@@ -18,6 +18,9 @@ elasticsearch-300-[00:99]
 [data-disk]
 elasticsearch-300-[00:99]
 
+[elasticsearch]
+elasticsearch-300-[00:99]
+
 [yum-cron]
 cromwell-500-[00:99]
 jg-cromwell-100-[00:99]
