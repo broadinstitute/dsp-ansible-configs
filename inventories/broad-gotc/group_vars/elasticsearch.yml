@@ -1,18 +1,8 @@
 ---
-docker_service_health_check: 'curl http://localhost:9200/_cat/health'
 
-elasticsearch_filesystems__to_merge:
-  - device: '/dev/disk/by-id/google-elasticsearch-data-disk'
-    mountpoint: '/local/application_data'
-    owner: 1000
-    group: 1000
-    mode: 755
-
-elasticsearch_ossettings__to_merge:
-  - name: 'vm.max_map_count'
+- ansible.posix.sysctl:
+    name: 'vm.max_map_count'
     reload: yes
     sysctl_set: yes
     value: 262144
 
-elasticsearch_gitrepos__to_merge:
-  - { address: 'https://github.com/broadinstitute/ansible-role-docker-service.git', name: 'ansible-role-docker-service', version: '1.0.1' }
