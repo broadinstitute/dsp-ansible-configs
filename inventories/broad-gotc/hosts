@@ -16,7 +16,7 @@ clio-300-[00:99]
 elasticsearch-300-[00:99]
 
 [data-disk]
-graphite-100-[00:99]
+elasticsearch-300-[00:99]
 
 [yum-cron]
 cromwell-500-[00:99]
